@@ -1,0 +1,16 @@
+{
+  "name": "paradauxio-site",
+  "version": "1.0.0",
+  "description": "Personal Website of Rían Errity",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/paradaux-bulma.scss css/paradaux-bulma.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Rían Errity",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.2",
+    "node-sass": "^5.0.0"
+  }
+}
