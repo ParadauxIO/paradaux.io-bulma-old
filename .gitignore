@@ -1,0 +1,9 @@
+# Nodejs
+node_modules/
+
+# Compiled SASS
+css/mystyles.css
+
+# IntelliJ Webstorm
+*.iml
+.idea/
