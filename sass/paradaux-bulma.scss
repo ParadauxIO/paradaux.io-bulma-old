@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// Custom Palette based on https://colorhunt.co/palette/2763
+
+$dark: #222831;
+$white: #edeef7;
+$danger-dark: #393e46;
+
+$link: #00adb5;
+$link-active: #00adb5;
+
+$body-background-color: $dark;
+
+$navbar-item-color: $white;
+$navbar-background-color: $dark;
+$navbar-item-hover-background-color: #2c3440;
+$navbar-item-hover-color: #edeef7;
+
+$menu-list-link-padding: 0px;
+
+$footer-color: $white;
+$footer-padding: 1px;
+$footer-background-color: $danger-dark;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma";
