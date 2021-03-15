@@ -2,7 +2,7 @@
 node_modules/
 
 # Compiled SASS
-css/mystyles.css
+assets/css/mystyles.css
 
 # IntelliJ Webstorm
 *.iml
