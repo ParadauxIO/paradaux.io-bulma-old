@@ -131,7 +131,7 @@
             <div class="card" style="padding: 3%">
                 <p>
                     FriendlyBot is a moderation discord bot with various administrative, utility and fun commands. It is backed by a MongoDB
-                    Database<sup>(i hear it's webscale guys)</sup>
+                    Database<sup>&nbsp; (i hear it's webscale guys)</sup>
                 </p>
 
                 <p>
@@ -154,18 +154,44 @@
                     <div class="card-content">
                         <div class="content">
                             <ul class="dashed">
-                                <li></li>
+                                <li>Custom Color Roles</li>
+                                <li>Tag System for user-defined responses.</li>
+                                <li>Anti-raid email verification</li>
+                                <li>Server  and User Information Commands</li>
+                                <li>Weather Information</li>
+                                <li>Wolfram Alpha Integration</li>
+                                <li>Meme generation commands</li>
+                                <li>Cat/Dog/Monekey Picture Commands</li>
+                                <li>8Ball/Coin flip Commands</li>
+                                <li>XKCD Search Command</li>
+                            </ul>
+
+                            <br>
+                            <p class="is-3"><strong>Coming Soon</strong></p>
+                            <ul class="dashed">
+                                <li>Online personal information viewer</li>
+                                <li>Online server/bot configurator</li>
+                                <li>Java Compiler command</li>
+                                <li>Regex-based Tag System</li>
+                                <li>Reaction tags</li>
+                                <li>Better Audit Logging</li>
+                                <li>Online audit log viewer</li>
+                                <li>View server emojis in ;serverinfo</li>
+                                <li>Modmail web submission form</li>
+                                <li>Modmail private message ticketing</li>
+                                <li>Muting system</li>
+                                <li>Automatic onboarding for new guilds</li>
                             </ul>
                         </div>
                     </div>
                     <footer class="card-footer">
                         <a href="https://csfriendlycorner.com" class="card-footer-item">
                             <span class="icon is-hidden-touch">
-                                <ion-icon name="link-outline"></ion-icon>
+                                <ion-icon name="bug-outline"></ion-icon>
                             </span>
-                            <span class="is-hidden-desktop">&nbsp;Link</span>
+                            <span class="is-hidden-desktop">&nbsp;YouTrack</span>
                         </a>
-                        <a href="https://github.com/ParadauxIO/ComputerScienceFriendlyCornerPages" class="card-footer-item">
+                        <a href="https://github.com/ParadauxIO/FriendlyBot" class="card-footer-item">
                             <span class="icon is-hidden-touch">
                                 <ion-icon name="logo-github"></ion-icon>
                             </span>
@@ -179,24 +205,101 @@
                 <div class="card">
                     <header class="card-header">
                         <p class="card-header-title">
-                            MarkovMegaHal
+                            Bot Stats <sup>&nbsp;(updated hourly)</sup>
+                        </p>
+                    </header>
+
+                    <div class="card-content">
+                        <div class="content">
+                            <nav class="level is-mobile">
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="heading">Guilds</p>
+                                        <p id="guild-count" class="title">3,456</p>
+                                    </div>
+                                </div>
+
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="heading">Users</p>
+                                        <p id="user-count" class="title">123</p>
+                                    </div>
+                                </div>
+
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="heading">Lines of Code</p>
+                                        <p id="loc-count" class="title">456K</p>
+                                    </div>
+                                </div>
+                            </nav>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Online Tools
                         </p>
                     </header>
                     <div class="card-content">
                         <div class="content">
-                            A modernised JMegaHal implementation<br><br>
-                            Project Started: <time datetime="2020-11-28">04:32 AM - 23 Jan 2021</time>
+                            Various online tools for FriendlyBot.<br><br>
+                            <strong>N.B</strong>: These are work-in-progress.<br><br>
+
+
+                            <p class="is-4">Tag Viewer</p>
+                            <p class="help">If you don't know your guild's ID you can use the ;tags command to generate a link to the tag viewer page.</p>
+                            <nav class="level" style="color: black; margin-top: 20px; padding-bottom: 3%; border-bottom: 1px solid lightgrey;">
+                                <div class="level-item has-text-centered">
+                                    <label class="label" for="tag-viewer">Server ID</label>
+                                </div>
+
+                                <div class="level-item has-text-centered">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input id="tag-viewer" name="tag-viewer" class="input" type="text" placeholder="Guild ID goes here">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="level-item has-text-centered">
+                                    <button class="button is-dark">View Tags</button>
+                                </div>
+                            </nav>
+
+                            <p class="is-4">More coming soon...</p>
+                            <p class="help">These web tools take a lot of time to create, so be sure to keep an eye on the github for progress.</p>
                         </div>
                     </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/ParadauxIO/MarkovMegaHal" class="card-footer-item">
-                            <span class="icon is-hidden-touch">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </span>
-                            <span class="is-hidden-desktop">&nbsp;GitHub</span>
-                        </a>
-                    </footer>
+                    <br>
                 </div>
+
+                <br>
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Invite the discord bot.
+                        </p>
+                    </header>
+
+                    <div class="card-content">
+                        <div class="content">
+                            <strong>N.B</strong>: This bot is in a private beta.<br><br>
+
+                            <p>
+                                If you would like to have FriendlyBot watch over your server, please use the contact form <a href="/contact.html">here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -212,6 +315,8 @@
         </p>
     </div>
 </footer>
+
+<script src="/assets/js/friendlybot.js"></script>
 
 </body>
 </html>
