@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FriendlyBot</title>
+
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/feather/feather.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
+
+</head>
+<body>
+<!-- Header -->
+<section class="section is-header" style="height: -40px; margin-top: -40px;">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-brand" style="border:0 solid red; display: flex; align-items: center;">
+                <a href="https://larryho.st">
+                    <img src="https://cdn.paradaux.io/img/asv5c.png" style="width: 17%" alt="Larryhost Logo">
+                </a>
+            </div>
+
+            <!-- Nav bar -->
+            <div id="navbar-default" class="navbar-menu" style="">
+                <div class="navbar-end">
+                    <div style="display: flex; align-items: center;">
+                        <a href="https://github.com/ParadauxIO/FriendlyBot">
+                            <button class="button"
+                                    style="background-color: #008080; color: white; font-weight: bold; text-transform: uppercase;">
+                                Source Code
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="hero is-medium">
+    <div class="hero-body">
+        <div class="field" style="max-width: 30%">
+            <label class="label" >Server ID</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+            </div>
+            <p class="help">This is a help text</p>
+        </div>
+
+
+        <div id="tags" style="flex: 2" class="limit"></div>
+    </div>
+</section>
+
+<script type="text/javascript">
+
+    const urlParams = new URLSearchParams(window.location.search);
+    console.log(window.location.search)
+    console.log(urlParams.getAll("_ijt"))
+
+    $.ajax({
+        dataType: "json",
+        type: "GET",
+        layout: "fitData",
+        url: "https://api.paradaux.io/friendly-bot/tags/" + urlParams.get("serverid"),
+        success: function (responseData) {
+            let table = new Tabulator("#tags", {
+                height: 800, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+                data: responseData,
+                ajaxConfig: "GET",
+                ajaxContentType: "json",
+                layout: "fitColumns", //fit columns to width of table (optional)
+                columns: [{title: "Name", field: "id"}, {title: "Content", field: "content"}],
+            });
+        }
+    });
+</script>
+
+<link href="css/tabulator_bulma.min.css" rel="stylesheet">
+
+</body>
+</html>

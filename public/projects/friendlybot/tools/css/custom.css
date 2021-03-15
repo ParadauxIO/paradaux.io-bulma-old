@@ -1,0 +1,33 @@
+.underline.is-danger {
+    -webkit-box-shadow: inset 0 -6px 0 rgba(255,74,110,.2);
+    box-shadow: inset 0 -6px 0 rgba(255,74,110,.2)
+}
+
+.underline.is-purple {
+    -webkit-box-shadow: inset 0 -6px 0 rgba(184,107,255,.2)
+    ;box-shadow: inset 0 -6px 0 rgba(184,107,255,.2)
+}
+
+.underline.primary {
+    -webkit-box-shadow: inset 0 -1px 0 rgba(35,209,153,.2);
+    box-shadow: inset 0 -3px 0 rgba(35,209,153,.2)
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.policy.card {
+    max-width: 30%;
+}
+
+.policy.card-content {
+    max-width: 10%;
+}
+
+.hero-body {
+    padding: 1000px
+}
