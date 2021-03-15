@@ -13,9 +13,7 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-// document.getElementById("p1").innerHTML = "New text!";
-
-getJSON('http://localhost:1343/friendly-bot/stats', function(err, data) {
+getJSON('https://api.paradaux.io/friendly-bot/stats', function(err, data) {
     document.getElementById("user-count").innerHTML = data.userCount;
     document.getElementById("guild-count").innerHTML = data.guildCount;
     document.getElementById("loc-count").innerHTML = data.codeLinesCount;
