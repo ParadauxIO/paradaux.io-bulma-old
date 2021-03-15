@@ -14,7 +14,7 @@ function drawTables() {
         data.forEach(element => {
             console.log(element);
             document.getElementById("tag-table").innerHTML += `
-<tr style="max-width: available">
+<tr style="word-break: break-all">
     <th>
         ${element.id}
     </th>
