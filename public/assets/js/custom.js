@@ -1,7 +1,7 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json');
 
-document.querySelector('button#contact-submit').addEventListener('click', function(event) {
+document.querySelector('#contact-submit').addEventListener('click', function(event) {
     event.preventDefault();
 
     let modal = document.querySelector('.modal');

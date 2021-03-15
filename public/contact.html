@@ -48,7 +48,6 @@
     <!-- additional CSS -->
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
     <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/custom.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script>
 </head>
@@ -121,24 +120,6 @@
 
 <section class="hero">
     <div class="hero-body" style="padding-left: 4%; padding-right: 4%">
-
-        <div class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Modal title</p>
-                    <button class="delete" aria-label="close"></button>
-                </header>
-                <section class="modal-card-body">
-                    <!-- Content ... -->
-                </section>
-                <footer class="modal-card-foot">
-                    <button class="button is-success">Save changes</button>
-                    <button class="button">Cancel</button>
-                </footer>
-            </div>
-        </div>
-
         <div class="columns">
             <div class="column">
                 <div class="card">
@@ -261,6 +242,25 @@
                                 </div>
                             </div>
                         </fieldset>
+
+                        <div class="modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-card">
+                                <header class="modal-card-head">
+                                    <p class="modal-card-title">Form Submitted</p>
+                                    <button class="delete" aria-label="close" id="modal-close-corner"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                    <p>
+                                        <strong>Thanks for reaching out!</strong> I'll be in touch in due course, usually within 24 hours.
+                                    </p>
+                                </section>
+                                <footer class="modal-card-foot">
+                                    <button class="button" id="modal-close">close</button>
+                                </footer>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
@@ -279,6 +279,7 @@
     </div>
 </footer>
 
+<script src="assets/js/custom.js"></script>
 </body>
 </html>
 
