@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal Website of Rían Errity",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/paradaux-bulma.scss assets/css/paradaux-bulma.css",
+    "css-build": "node-sass --omit-source-map-url sass/paradaux-bulma.scss public/assets/css/paradaux-bulma.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
   },
