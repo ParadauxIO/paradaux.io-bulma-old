@@ -4,12 +4,17 @@ function drawTables() {
     let guildId = urlParams.get("serverid") ?? "No Server Specified"
 
     if (guildId === undefined || guildId === "No Server Specified") {
-        document.getElementById("tags").innerHTML = "No Server Specified."
+        makeTableMessage("Error: No server specified.");
         return;
     }
 
     getJSON('https://api.paradaux.io/friendly-bot/tags/' + guildId, function(err, data) {
-        console.log(data)
+
+
+        if (!(data.length > 0)) {
+            makeTableMessage("Error: No such server found.");
+            return;
+        }
 
         data.forEach(element => {
             console.log(element);
@@ -29,6 +34,17 @@ function drawTables() {
 
     reloadParticles();
 }
+
+function notify(message) {
+
+    let table = document.getElementById("tag-table");
+    let messageBox = document.createElement('textarea');
+    messageBox.value = message;
+    table.parentNode.insertBefore(messageBox, table.nextSibling);
+    table.remove();
+}
+
+
 
 drawTables();
 
