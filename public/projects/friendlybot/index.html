@@ -79,11 +79,11 @@
                         <span class="navbar-item-name">blog</span>
                     </a>
 
-                    <a href="projects.html" class="navbar-item">
+                    <a href="/projects.html" class="navbar-item">
                         <span class="navbar-item-name">projects</span>
                     </a>
 
-                    <a href="contact.html" class="navbar-item">
+                    <a href="/contact.html" class="navbar-item">
                         <span class="navbar-item-name">contact</span>
                     </a>
 
@@ -215,21 +215,21 @@
                                 <div class="level-item has-text-centered">
                                     <div>
                                         <p class="heading">Guilds</p>
-                                        <p id="guild-count" class="title">3,456</p>
+                                        <p id="guild-count" class="title">0</p>
                                     </div>
                                 </div>
 
                                 <div class="level-item has-text-centered">
                                     <div>
                                         <p class="heading">Users</p>
-                                        <p id="user-count" class="title">123</p>
+                                        <p id="user-count" class="title">0</p>
                                     </div>
                                 </div>
 
                                 <div class="level-item has-text-centered">
                                     <div>
                                         <p class="heading">Lines of Code</p>
-                                        <p id="loc-count" class="title">456K</p>
+                                        <p id="loc-count" class="title">0</p>
                                     </div>
                                 </div>
                             </nav>
@@ -255,23 +255,27 @@
 
                             <p class="is-4">Tag Viewer</p>
                             <p class="help">If you don't know your guild's ID you can use the ;tags command to generate a link to the tag viewer page.</p>
-                            <nav class="level" style="color: black; margin-top: 20px; padding-bottom: 3%; border-bottom: 1px solid lightgrey;">
-                                <div class="level-item has-text-centered">
-                                    <label class="label" for="tag-viewer">Server ID</label>
-                                </div>
-
-                                <div class="level-item has-text-centered">
-                                    <div class="field">
-                                        <div class="control">
-                                            <input id="tag-viewer" name="tag-viewer" class="input" type="text" placeholder="Guild ID goes here">
+                            <form action="friendlybot/tools/tag_viewer.html">
+                                <fieldset>
+                                    <nav class="level" style="color: black; margin-top: 20px; padding-bottom: 3%; border-bottom: 1px solid lightgrey;">
+                                        <div class="level-item has-text-centered">
+                                            <label class="label" for="serverid">Server ID</label>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="level-item has-text-centered">
-                                    <button class="button is-dark">View Tags</button>
-                                </div>
-                            </nav>
+                                        <div class="level-item has-text-centered">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input id="serverid" name="serverid" class="input" type="text" placeholder="Guild ID goes here">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="level-item has-text-centered">
+                                            <button id="tag-submit" class="button is-dark">View Tags</button>
+                                        </div>
+                                    </nav>
+                                </fieldset>
+                            </form>
 
                             <p class="is-4">More coming soon...</p>
                             <p class="help">These web tools take a lot of time to create, so be sure to keep an eye on the github for progress.</p>
